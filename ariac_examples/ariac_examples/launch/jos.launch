@@ -1,0 +1,20 @@
+<launch>
+ 
+<arg name="scene_file" default="$(find ariac_examples)/config/ariac.scene" />
+  <node name = "moveit_publish_scene_from_text" pkg= "moveit_ros_planning" type = "moveit_publish_scene_from_text" args= "$(arg scene_file)">
+</node>
+
+
+   <include file="$(find ur10_moveit_config)/launch/ur10_moveit_planning_execution.launch">
+  <arg name ="sim" value="true"/>
+  <arg name ="limited" value="true"/>
+  </include>
+
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+  <param name="/use_gui" value="false"/>
+  </node>
+
+  <node name="js" pkg="ariac_examples" type="js" respawn="false" output="screen">
+  </node>
+  
+</launch>

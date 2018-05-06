@@ -1,0 +1,3 @@
+int64 part_numbers
+---
+geometry_msgs/Point[] points
