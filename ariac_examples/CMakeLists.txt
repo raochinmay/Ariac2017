@@ -52,9 +52,9 @@ target_link_libraries(js ${catkin_LIBRARIES})
 # See http://ros.org/doc/api/catkin/html/adv_user_guide/variables.html
 
 ## Mark executable scripts (Python etc.) for installation
-install(PROGRAMS script/ariac_example_node.py
-  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
-)
+##install(PROGRAMS script/ariac_example_node.py
+##  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
+##)
 
 ## Mark executables and/or libraries for installation
 install(TARGETS js
@@ -71,10 +71,10 @@ install(TARGETS js
 # )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-install(FILES
- config/sample_gear_conf.yaml
- DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config
-)
+#install(FILES
+# config/sample_gear_conf.yaml
+# DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config
+#)
 
 
 #############
@@ -89,3 +89,4 @@ install(FILES
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
