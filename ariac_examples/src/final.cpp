@@ -7,7 +7,7 @@
 #include <osrf_gear/Proximity.h>
 #include <osrf_gear/GetMaterialLocations.h>
 #include <osrf_gear/VacuumGripperControl.h>
-#include <osrf_gear/AGVControl.h>
+//#include <osrf_gear/AGVControl.h>
 #include <osrf_gear/VacuumGripperState.h>
 #include <tf/transform_listener.h>
 #include <sensor_msgs/JointState.h>
