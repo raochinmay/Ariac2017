@@ -71,7 +71,7 @@ install(TARGETS js
 # )
 
 ## Mark other files for installation (e.g. launch and bag files, etc.)
-#install(FILES
+install(FILES
  config/sample_gear_conf.yaml
  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config
 )
